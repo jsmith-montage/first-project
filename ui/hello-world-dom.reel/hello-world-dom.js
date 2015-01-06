@@ -23,6 +23,8 @@ exports.HelloWorldDom = Component.specialize(/** @lends HelloWorldDom# */ {
             var div = document.createElement("div");
             div.textContent = "hello world";
             fragment.appendChild(div);
+            fragment.appendChild(div.cloneNode(true);
+            fragment.appendChild(div.cloneNode(true);
             this.element.appendChild(fragment);
         }
     }
