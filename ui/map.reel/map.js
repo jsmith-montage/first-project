@@ -14,7 +14,8 @@ exports.Map = Component.specialize(/** @lends Map# */ {
             this.super();
         }
     },
-    didDraw: function() {
+    didDraw: function(e) {
+        this.super(e);
         alert("Test");   
     }
 });
