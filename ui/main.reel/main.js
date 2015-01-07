@@ -30,12 +30,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var value = Number(this.templateObjects.value.element.textContent);
             this.templateObjects.value.element.textContent = value-1;
         }
-    },
-
-    handleSliderAction: {
-        value: function (event) {
-            alert(this.templateObjects.Slider.value);
-        }
     }
 
 });

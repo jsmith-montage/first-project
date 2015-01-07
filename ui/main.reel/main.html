@@ -47,18 +47,15 @@
             "prototype": "digit/ui/slider.reel",
             "properties": {
                 "element": {"#": "Slider"},
+                "axis": "horizontal",
                 "enabled": true,
                 "max": 100,
                 "min": 0,
                 "value": 50
             },
-            "listeners": [
-                {
-                    "type": "action",
-                    "useCapture": false,
-                    "listener": {"@": "owner"}
-                }
-            ]
+            "bindings": {
+                "value": {"<->": "@value.value"}
+            }
         },
         "value": {
             "prototype": "montage/ui/text.reel",
