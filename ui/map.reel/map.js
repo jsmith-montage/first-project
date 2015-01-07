@@ -23,7 +23,7 @@ exports.Map = Component.specialize(/** @lends Map# */ {
                                                "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
             map.addLayer(wms);
             map.zoomToMaxExtent();
-            map.render('map');
+            map.render(this.element.querySelector("div"));
         }
     }
 });
