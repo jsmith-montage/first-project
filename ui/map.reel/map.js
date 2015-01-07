@@ -18,7 +18,7 @@ exports.Map = Component.specialize(/** @lends Map# */ {
         value: function() {
             debugger;
             var mapEl = this.element.querySelector("div");
-            jeffmap = new OpenLayers.Map(mapEl);
+            jeffmap = new OpenLayers.Map('map');
             var wms = new OpenLayers.Layer.WMS( "OpenLayers WMS",
                                                "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
             jeffmap.addLayer(wms);
