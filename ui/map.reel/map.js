@@ -13,5 +13,9 @@ exports.Map = Component.specialize(/** @lends Map# */ {
         value: function Map() {
             this.super();
         }
+    },
+    enterDocument: function() {
+        var map = this.element.querySelector("div");   
+        debugger;
     }
 });
