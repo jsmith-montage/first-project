@@ -43,6 +43,23 @@
                 }
             ]
         },
+        "Slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "Slider"},
+                "enabled": true,
+                "max": 100,
+                "min": 0,
+                "value": 50
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
         "value": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -60,6 +77,7 @@
         </button>
         <p data-montage-id="value"></p>
         <button data-montage-id="Decrement"></button>
+        <div data-montage-id="Slider"></div>
     </div>
 </body>
 </html>
