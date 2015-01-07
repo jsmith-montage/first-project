@@ -13,20 +13,41 @@
                 "element": {"#": "main"}
             }
         },
-        "button": {
+        "Decrement": {
             "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "button"},
-                "enabled": true,
-                "label": "+"
-            }
-        },
-        "button3": {
-            "prototype": "digit/ui/button.reel",
-            "properties": {
-                "element": {"#": "button3"},
+                "element": {"#": "Decrement"},
                 "enabled": true,
                 "label": "-"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "Increment": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "Increment"},
+                "enabled": true,
+                "label": "+"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "value": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "value"},
+                "value": "0"
             }
         }
     }
@@ -34,10 +55,11 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <button data-montage-id="button">
+        <button data-montage-id="Increment">
 
         </button>
-        <button data-montage-id="button3"></button>
+        <p data-montage-id="value"></p>
+        <button data-montage-id="Decrement"></button>
     </div>
 </body>
 </html>
