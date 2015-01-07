@@ -34,7 +34,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     handleSliderAction: {
         value: function (event) {
-            debugger;
             alert(this.templateObjects.Slider.value);
         }
     }
