@@ -18,11 +18,11 @@ exports.Map = Component.specialize(/** @lends Map# */ {
         value: function() {
             debugger;
             var mapEl = this.element.querySelector("div");
-            var map = new OpenLayers.Map(mapEl);
+            jeffmap = new OpenLayers.Map(mapEl);
             var wms = new OpenLayers.Layer.WMS( "OpenLayers WMS",
                                                "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
-            map.addLayer(wms);
-            map.zoomToMaxExtent();
+            jeffmap.addLayer(wms);
+            jeffmap.zoomToMaxExtent();
         }
     }
 });
