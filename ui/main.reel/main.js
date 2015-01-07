@@ -30,6 +30,12 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var value = Number(this.templateObjects.value.value);
             this.templateObjects.value.value = value-1;
         }
+    },
+    
+    handleEvent: {
+        value: function(event) {
+            alert("Test");   
+        }
     }
 
 });
